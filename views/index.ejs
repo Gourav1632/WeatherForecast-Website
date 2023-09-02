@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <img src="/images/man-5846064_1920.jpg" alt="" height="100%">
+        <div class="box">
+            
+        <h2>What's the weather in your city?</h2>
+        <div class="form">
+        <form action="/weather" method="post" >
+        <label for="cityInput" class="city">City Name :</label>
+        <input type="text" name="city" id="cityInput" class="input">
+        <button type="submit">Search</button>        
+    </div>
+         <% if (locals.temp){ %>   
+        <div class="weatherBox">
+        <h3><%= temp %> °C in <%= city %> with <%= desc %>.</h3>
+        <img src= <%= url %> alt="" class="weatherIcon">
+        </div>
+
+
+        <% } %>
+
+    </div>
+    </div>
+    
+    </form>
+    <h1>Gourav</h1>
+    <footer>© Gourav Kumar</footer>
+
+
+</body>
+</html>
