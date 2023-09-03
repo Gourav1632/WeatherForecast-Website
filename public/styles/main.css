@@ -109,16 +109,19 @@ body{
     align-items: center;
 }
 h2{
-    font-size: 25px;
+    font-size: 1rem;
     margin: 15px;
 }
 .city{
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+.input{
+    width: 37%;
 }
 button{
     position: fixed;
     left: 94%;
-    margin: 0px;
+    margin: 0px 10px;
     transform: translate(-100%,-113%);
     padding: 6px 15px;
     border-radius: 20px;
@@ -145,9 +148,9 @@ button{
 }
 .weatherBox>h3{
     margin-top: 0px;
+    font-size: 1rem;
+}
 }
 .weatherIcon{
     margin-top: 0px;
-}
-
 }
