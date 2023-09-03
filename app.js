@@ -3,6 +3,7 @@ const app = express();
 const https = require("https");
 const bodyParser = require("body-parser");
 const exp = require("constants");
+const apiModule = require("./api.js")
 
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static("public"))
@@ -14,7 +15,7 @@ app.get("/", function(req, res){
 app.post("/weather", function(req,res){
 
     const cityName = req.body.city;
-    const url = "https://api.openweathermap.org/data/2.5/weather?q="+ cityName +"&appid=928f5578637a776a8586c318bdbd50f1&units=metric"
+    const url = "https://api.openweathermap.org/data/2.5/weather?q="+ cityName +"&appid="+apiModule.api+"&units=metric"
     https.get(url , function(request){
         request.on("data", function(data){
             const weatherData = JSON.parse(data);
@@ -32,12 +33,5 @@ app.post("/weather", function(req,res){
 app.listen(3000, function(){
     console.log("Server started. Enjoy...")
 })
-
-
-// api key
-// dc5c2bb886cba07cff6c1f2599e17f20-us14
-
-// audience id
-// 8f669f38ab
 
 

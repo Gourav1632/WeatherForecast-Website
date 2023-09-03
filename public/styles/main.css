@@ -4,7 +4,6 @@
 }
 body{
     background-color: #344864;
-    height: 100vh;
 }
 .box{
     border-radius: 20px;
@@ -89,4 +88,66 @@ footer{
     top: 97%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+@media (max-width : 768px){
+
+body{
+    height: auto;
+}
+.box{
+    border-radius: 20px;
+    position: fixed;
+    top: 81%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 0, 0,0.3);
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-size: 25px;
+    margin: 15px;
+}
+.city{
+    font-size: 1.5rem;
+}
+button{
+    position: fixed;
+    left: 94%;
+    margin: 0px;
+    transform: translate(-100%,-113%);
+    padding: 6px 15px;
+    border-radius: 20px;
+    background-color: #FEE094;
+    font-weight: bolder;
+    font-size: 16px;
+    border-style: none;
+    color: black;
+}
+.weatherBox{
+    padding: 10px;
+    margin-top: 8px;
+    height: 47%;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lora', serif;
+    color: #0f141b;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+}
+.weatherBox>h3{
+    margin-top: 0px;
+}
+.weatherIcon{
+    margin-top: 0px;
+}
+
 }
