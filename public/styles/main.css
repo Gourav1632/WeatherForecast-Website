@@ -134,7 +134,7 @@ button{
 .weatherBox{
     padding: 10px;
     margin-top: 8px;
-    height: 53%;
+    height: 37%;
     width: 80%;
     background-color: white;
     display: flex;
@@ -153,4 +153,5 @@ button{
 }
 .weatherIcon{
     margin-top: 0px;
+    height: 75%;
 }
