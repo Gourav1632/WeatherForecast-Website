@@ -116,12 +116,12 @@ h2{
     font-size: 1rem;
 }
 .input{
-    width: 37%;
+    width: 30%;
 }
 button{
     position: fixed;
-    left: 94%;
-    margin: 0px 10px;
+    left: 99%;
+    margin: 0px;
     transform: translate(-100%,-113%);
     padding: 6px 15px;
     border-radius: 20px;
@@ -134,8 +134,8 @@ button{
 .weatherBox{
     padding: 10px;
     margin-top: 8px;
-    height: 47%;
-    width: 70%;
+    height: 53%;
+    width: 80%;
     background-color: white;
     display: flex;
     align-items: center;
